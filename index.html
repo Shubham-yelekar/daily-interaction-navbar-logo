@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Daily Interactions Navbar Logo</title>
 </head>
 <body>
-    
+    <div class="body-wrapper">
+        <div class="navbar">
+            <div class="navbar-left-wrapper">
+                <a href="#" class="animated-button">Work</a>
+                <a href="#" class="animated-button">About</a>
+            </div>
+            <a href="#" class="main-logo">Carl Sagan</a>
+            <div class="navbar-right-wrapper">
+                <a href="#" class="animated-button">
+                    <span class="animated-button-content">Contact</span> 
+                    <div class="bg-button"></div>
+                </a>   
+            </div>
+        </div>
+        <div class="hero-section">
+            <h1>Carl Sagan</h1>
+            <div class="subheading">
+                <div></div>
+                <div>
+                    <p>The Earth is the only world known so far to harbor life. There is nowhere else, at least in the near future, to which our species could migrate.
+                    </p>
+                    <a href="#" class="animated-button">About</a>
+                </div>
+            </div>           
+        </div>
+       
+        <div class="main-image">
+            <img src="./main-image.jpg" alt="" srcset="">
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script> 
+
+    <script>
+        const lenis = new Lenis()
+
+   
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
 </body>
 </html>

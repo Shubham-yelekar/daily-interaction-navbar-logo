@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --primary-ff :  'Inter', sans-serif;
+}
+
+/* CSS Reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--primary-ff);
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+a {
+    all:unset;
+    cursor: pointer;
+}
+
+/* CSS Reset */
+
+
+h1 {
+    font-size: 20rem ;
+    letter-spacing: -1.2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+p {
+    font-size: 2.4rem;
+    letter-spacing: -0.1rem;
+}
+
+.body-wrapper {
+    width: 96%;
+    /* outline: 1px solid #1d1d11; */
+    margin: 0 auto;
+}
+
+.navbar {
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-left-wrapper {
+    width: 180px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2.4rem;
+}
+
+.navbar-right-wrapper {
+    width: 180px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-logo {
+    font-size: 2.1rem;
+    letter-spacing: -0.1rem;
+    font-weight: 400;
+}
+
+.subheading {
+    display:grid ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap:0px;
+    grid-row-gap:0px;
+}
+
+.main-image img {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.animated-button {
+    font-size: 1.6rem;
+    padding: 8px 16px;
+    border: 1px  solid #181818;
+    border-radius: 3.6rem;
+    background: #ffffff;
+    background-size: 400%;
+    color: #181818;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+
+    width: 1200px;
+    margin: 12rem auto;
+}
+
+.subheading p {
+    margin: 2.4rem 0 ;
+}
